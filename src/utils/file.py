@@ -43,5 +43,13 @@ def write_to_csv(path, rows):
 		print(f"writing to file: {file} with fieldnames: {fieldnames}")
 		writer = csv.DictWriter(file, fieldnames=fieldnames)
 
+		failures = []
+
 		for row in rows:
-			writer.writerow(row)
+			try:
+				writer.writerow(row)
+			except csv.Error:
+				failures.append
+				print(f"Error writing to csv for row: {csv.Error}")
+		
+		print(f"{len(rows)-len(failures)} of {len(rows)} rows inserted successfully")

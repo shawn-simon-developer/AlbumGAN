@@ -2,6 +2,7 @@
 SpotifyAPI/config.json
 src/config/*
 !src/config/*.template.json
+src/data/*
 
 # FS
 **/.DS_Store
