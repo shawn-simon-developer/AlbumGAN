@@ -14,7 +14,7 @@ def read_file(path):
     file = open(path, mode='r')
   except OSError:
     print(f"Could not open file: {path}")
-  raise
+    raise
 
   data = {}
 
