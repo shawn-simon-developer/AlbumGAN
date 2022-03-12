@@ -1,5 +1,8 @@
 # Project
 SpotifyAPI/config.json
+src/config/*
+!src/config/*.template
+src/data/*
 
 # FS
 **/.DS_Store

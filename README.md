@@ -15,4 +15,7 @@ Manages virtual environments for your python project. Kinda like npm, but also m
 ### How to actually start quick
 Install Pyenv and Pipenv (use the links above), navigate to the directory and type `pipenv shell` to start the virtual environment and then install all deps using `pipenv install`.
 
-Make a copy of the `config_TEMPLATE.json` and call it `config.json` with your credientials. This will be git ignored.
+### Run scripts
+`pythin main.py` from root project folder
+
+Make copies of any `config/*.template files` and create a .json file extension version with your actual credientials. This will be git ignored.
